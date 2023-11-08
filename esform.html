@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Form</title>
+</head>
+<body>
+
+    <form>
+        <thead>
+        <h1>Esercizio Form</h1>
+        </thead>
+        
+        <div>
+            <label for="firstname">Nome</label>
+            <input
+                id="firstname"
+                placeholder="Name"
+                type="text"
+                name="firstname"
+                required
+            />
+            <br/>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input 
+                type="email"
+                placeholder="Email" 
+                name="email" 
+                required 
+            />
+            <br/>
+        </div>    
+    
+        <div>
+            <label for="messaggio">Messaggio</label>
+            <!-- textarea -->
+            <br>
+            <textarea name="descrizione"></textarea>
+            <br/>
+        </div>
+        
+
+                        <!-- Pulsante invio -->
+                        <tr>
+                            <td>
+                                <button type="submit" name="btnsubmit" id="pulsanteSubmit">Invia</button>
+                            </td>
+                        </tr>
+
+                        <br>
+                        <br>
+                        
+                        <!-- Select -->
+                        <tr>
+                            <td>
+                                <label for="selector">Selezione</label>
+                                <select name="selector" id="selector">
+                                    <option value="">Domanda</option>
+                                    <option value="selector">Feedback</option>
+                                    <option value="selector">Segnalazione di bug</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <br>
+                        <br>
+
+
+    </form>           
+</body>
+</html>
