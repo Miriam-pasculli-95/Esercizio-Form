@@ -13,7 +13,7 @@
         </thead>
         
         <div>
-            <label for="firstname">Nome</label>
+            <label for="firstname"><b>Nome</b></label>
             <input
                 id="firstname"
                 placeholder="Name"
@@ -25,7 +25,7 @@
         </div>
 
         <div>
-            <label for="email">Email</label>
+            <label for="email"><b>Email</b></label>
             <input 
                 type="email"
                 placeholder="Email" 
@@ -36,7 +36,7 @@
         </div>    
     
         <div>
-            <label for="messaggio">Messaggio</label>
+            <label for="messaggio"><b>Messaggio</b></label>
             <!-- textarea -->
             <br>
             <textarea name="descrizione"></textarea>
@@ -47,7 +47,11 @@
                         <!-- Pulsante invio -->
                         <tr>
                             <td>
-                                <button type="submit" name="btnsubmit" id="pulsanteSubmit">Invia</button>
+                                <button 
+                                type="submit" 
+                                name="btnsubmit" 
+                                id="pulsanteSubmit">
+                                Invia</button>
                             </td>
                         </tr>
 
@@ -57,7 +61,7 @@
                         <!-- Select -->
                         <tr>
                             <td>
-                                <label for="selector">Selezione</label>
+                                <label for="selector"><b>Selezione</b></label>
                                 <select name="selector" id="selector">
                                     <option value="">Domanda</option>
                                     <option value="selector">Feedback</option>
@@ -66,8 +70,81 @@
                             </td>
                         </tr>
 
+
                         <br>
                         <br>
+
+                        <!-- checkbox -->
+                        <form action="">
+                            <label for="selector"><b>Genere</b></label><br>
+                            <input 
+                            type="checkbox" 
+                            name="F" 
+                            value="f"/> F
+                            <br />
+                            <input 
+                            type="checkbox" 
+                            name="M" value="m"/> M
+                            <br />
+                            <input 
+                            type="checkbox" 
+                            name="O" 
+                            value="o"/> O
+                            <br />
+                        </form>
+
+                        <br>
+
+                                                <!-- radio -->
+                                                    
+                                                <form>
+                                                
+                                                    <label for="radio"><b>Hobby</b></label><br>
+                                                    <input 
+                                                    type="radio" 
+                                                    name="hobby" 
+                                                    value="sport" /> Sport
+                                                    <br />
+                                                    <input 
+                                                    type="radio" 
+                                                    name="hobby" 
+                                                    value="musica" /> Musica
+                                                    <br />
+                                                    <input 
+                                                    type="radio" 
+                                                    name="hobby" 
+                                                    value="arte" /> Arte
+                                                    <br />
+                                                    
+                                                </form>
+                                                    
+                                                    
+                                                <br>
+                                                <br>
+
+                                                <!-- Seleziona Photo -->
+                                                <tr>
+                                                    <td>
+                                                        <label for="inputPhoto"><b>Seleziona Foto</b></label>
+                                                        <br>
+                                                        <input 
+                                                        type="file" 
+                                                        name="inputFoto" 
+                                                        id="controlloFoto">
+                                                    </td>
+                                                </tr>
+                                            <br>
+
+
+                                                        <tr>
+                                                            <td>
+                                                                <button 
+                                                                type="submit" 
+                                                                name="btnsubmit" 
+                                                                id="pulsanteSubmit">
+                                                                Invia</button>
+                                                            </td>
+                                                        </tr>
 
 
     </form>           
